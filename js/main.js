@@ -125,7 +125,7 @@ window.jQuery = $;
 
         var getChaptersInfo = function() {
             return new Promise(function(resolve, reject) {
-                $.get("/test/web app/data/chapter.json", function(data) {
+                $.get("/web-app-reading/data/chapter.json", function(data) {
                     if (parseInt(data.result) === 0) {
                         if (chapterId === null || isNaN(chapterId)) {
                             chapterId = parseInt(data.chapters[1].chapter_id);
@@ -142,7 +142,7 @@ window.jQuery = $;
 
         var getTextContent = function() {
             return new Promise(function(resolve, reject) {
-                $.get("/test/web app/data/data" + chapterId + ".json", function(data) {
+                $.get("/web-app-reading/data/data" + chapterId + ".json", function(data) {
                     if (parseInt(data.result) === 0) {
                         var url = data.jsonp;
                         _util.getJSONP(url, function(data) {
