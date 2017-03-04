@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*========================
+        基本设置
+==========================*/
+html {
+    font-size: 62.5%;
+    color: #555;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #ffffff;
+}
+
+::selection {
+    background-color: #b3d4fc;
+    text-shadow: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*=========================
+        iconfont设置
+============================*/
+
+@font-face {
+    font-family: 'iconfont';  /* project id 235343 */
+    src: url('//at.alicdn.com/t/font_kuzwkau0dotlz0k9.eot');
+    src: url('//at.alicdn.com/t/font_kuzwkau0dotlz0k9.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_kuzwkau0dotlz0k9.woff') format('woff'),
+    url('//at.alicdn.com/t/font_kuzwkau0dotlz0k9.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_kuzwkau0dotlz0k9.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family:"iconfont" !important;
+    font-size:14px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/*==========================
+        主体内容
+============================*/
+
+/*顶部导航*/
+.top-nav {
+    position: fixed;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4rem;
+    padding: 1rem 0;
+    font-size: 0;
+    line-height: 2rem;
+    color: #d5d5d6;
+    background: #000000;
+    z-index: 10000;
+}
+
+.top-nav i{
+    font-size: 1.9rem;
+    padding: 0 0.5rem;
+}
+
+.top-nav span {
+    font-size: 1.5rem;
+}
+
+/*文章内容*/
+.fiction-content {
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+    text-align: left;
+}
+
+.fiction-content h4 {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    border-bottom: 1px solid #736357;
+    color: #736357;
+}
+
+.fiction-content p {
+    margin: 0.5rem 0;
+    text-indent: 2rem;
+    letter-spacing: 0;
+}
+
+
+/*翻页按钮*/
+.fiction-button {
+    width: 70%;
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+.fiction-button ul{
+    width: 100%;
+    height: 3rem;
+    border-radius: 0.5rem;
+    line-height: 3rem;
+    opacity: 0.9;
+    background: #000;
+}
+
+.fiction-button li {
+    display: inline-block;
+    width: 49%;
+    font-size: 1.4rem;
+    border-right: solid 1px #858382;
+    text-align: center;
+    color: #ffffff;
+}
+
+.fiction-button li:nth-child(2) {
+    margin-left: -2px;
+    border-right: none;
+}
+
+
+/*底部导航*/
+.bottom-nav {
+    position: fixed;
+    box-sizing: border-box;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 6rem;
+    padding: 1rem 0;
+    font-size: 0;
+    color: #d5d5d6;
+    background: #000000;
+    z-index: 10000;
+}
+
+.bottom-nav .nav-item {
+    display: inline-block;
+    text-align: center;
+    width: 33%;
+}
+
+.bottom-nav .nav-item i {
+    display: block;
+    line-height: 2.6rem;
+    font-size: 2rem;
+    width: 100%;
+}
+
+.bottom-nav .nav-item span{
+    display: block;
+    line-height: 1.4rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.font-color-cheng {
+    color: #fb7840;
+}
+
+/*底部导航字体设置*/
+
+.fiction-style {
+    position: fixed;
+    bottom: 6rem;
+    left: 0;
+    height: 12rem;
+    width: 100%;
+    opacity: 0.9;
+    background: #000000;
+    z-index: 10002;
+}
+
+.fiction-style .style-item {
+    height: 6rem;
+    box-sizing: border-box;
+    padding: 1rem 0;
+}
+
+.fiction-style .style-name {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    vertical-align: bottom;
+    color: #d5d5d6;
+}
+
+.fiction-style ul {
+    display: inline-block;
+    padding: 1rem 0;
+}
+
+.fiction-style .font-style {
+    display: inline-block;
+    padding: 0.49rem 2.5rem;
+    font-size: 1rem;
+    line-height: 1rem;
+    border: solid 1px #d5d5d6;
+    border-radius: 10px;
+    text-align: center;
+    color: #d5d5d6;
+}
+
+.fiction-style .font-style:first-child {
+    margin-right: 3rem;
+}
+
+.fiction-style .bgc-style {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+}
+
+.fiction-style .bgc-style+.bgc-style {
+    margin-left: 1rem;
+}
+
+.fiction-style .bgc-style .circle {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.fiction-style .bgc-action {
+    box-sizing: border-box;
+    border: solid 3px #fb7840;
+}
+
+.bgc-color-white {
+    background-color: #ffffff;
+}
+
+.bgc-color-yangpizhi {
+    background-color: #F3DDAE;
+}
+
+.bgc-color-lvdousha {
+    background-color: #C8EDCC;
+}
+
+.bgc-color-danlan {
+    background-color: #87C2FE;
+}
+
+.bgc-color-night {
+    background-color: #454545;
+}
+
+
+
+/*点击事件响应区域*/
+
+.mid-area {
+    position: fixed;
+    left: 0;
+    top: 30%;
+    height: 40%;
+    width: 100%;
+    z-index: 9998;
+}
