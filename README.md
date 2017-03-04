@@ -6,4 +6,5 @@
 - 使用localStorage缓存，jsonp跨域
 - 请用移动端打开，或者浏览器调到手机模拟器模式
 
-[项目总结笔记](https://zhangzirui.github.io/posts/练手笔记之Web%20app%20阅读器.md）
+<a href="https://zhangzirui.github.io/posts/练手笔记之Web%20app%20阅读器.md/" target="_blank">项目总结笔记</a>
+
